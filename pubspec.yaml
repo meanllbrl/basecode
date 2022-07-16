@@ -1,0 +1,89 @@
+name: basecodev2
+description: A new base flutter projets.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+#dependincies alınacak
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  #!BACKEND & MODULES
+  get_storage: ^2.0.3
+  flutter_svg: 1.1.1+1
+  font_awesome_flutter: ^10.1.0
+  rflutter_alert: ^2.0.2
+  provider:  ^6.0.3 
+  theme_provider:  ^0.5.0
+
+  #!USER EXPERIENCE (FRONTEND)
+  cupertino_icons: ^1.0.2
+  page_transition: ^2.0.9
+  animations: ^2.0.3
+  fluttertoast: ^8.0.9
+
+  #!FIREBASE PUBS
+  #firebase_core:
+  #cloud_firestore:
+  #firebase_auth:
+
+  #!NOTIFICATION PUBS
+  flutter_local_notifications: ^9.7.0
+  timezone: ^0.8.0
+  flutter_native_timezone: ^2.0.0
+  onesignal_flutter: ^3.3.2
+  flutter_localizations:
+    sdk: flutter
+
+  #!GITHUB PUB
+  mean_lib:
+    git:
+      url: https://github.com/meanllbrl/library.git
+  fetch_local_db:
+    git:
+      url: https://github.com/meanllbrl/fetch_local_db.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  #!FLUTTER RULES
+  flutter_lints: ^2.0.1
+  
+  #!APP ICONS AND SPLASH
+  flutter_launcher_icons: ^0.9.3
+  flutter_native_splash: ^2.2.4
+  
+#?COMMAND: flutter pub run flutter_launcher_icons:main 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "images/logo.png"
+
+#?COMMAND: flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#121417"
+  image: "images/logo.png"
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lang/
+    - images/
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
